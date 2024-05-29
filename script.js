@@ -10,6 +10,7 @@ const diceValue = document.querySelector("#diceValue")
             imgContainer.classList.add("runDice")
             diceImg.setAttribute("src", "./assets/descargar.jpg")
             let finalDesign = 'Girando'
+            diceValue.textContent = finalDesign
             let index = Math.floor(Math.random() * 6)
             let img = ''
             setTimeout(() => {
