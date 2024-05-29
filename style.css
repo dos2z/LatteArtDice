@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(149, 119, 86);
+}
+
+main{
+    padding-block: 20px;
+}
+h1 {
+    text-align: center;
+    margin: 30px;
+    color:blanchedalmond;
+}
+.appContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+}
+.imgContainer {
+    width: 80%;
+    max-width:500px ;
+    min-width: 290px;
+    max-height: 500px;
+    overflow: hidden;
+    border-radius: 50%;
+
+    & img {
+        width: 100%;
+        object-fit: contain;
+    }
+}
+
+#btnDice {
+    width: 90%;
+    padding: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    background-color: #3232dd;
+    max-width: 300px;
+    border: none;
+    outline: 2px solid #2727d9;
+}
+#btnDice:hover {
+    cursor: pointer;
+    background-color: #2727d9;
+}
+#btnDice:active {
+    outline: 2px #3232dd inset;
+}
+
+.runDice {
+    animation: myAnim 1s linear 0s 3 normal forwards;
+
+}
+
+
+
+@keyframes myAnim {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
